@@ -1,5 +1,5 @@
 # alba
-Alba tech company profile.
+Albatech company profile.
 
 # Tech stack
 - React
