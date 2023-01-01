@@ -1,20 +1,43 @@
-import Navbar from "./components/Navbar"
+import { useEffect, useState } from 'react'
+import { FloatingButton } from './components/FloatingButton'
+import { Footer } from './components/Footer'
+import { Header } from './components/PageSection/Header'
+import { Navbar } from './components/Navbar'
+import { OurProgress } from './components/PageSection/OurProgress'
+import { Portfolio } from './components/PageSection/Portfolio'
+import { Service } from './components/PageSection/Service'
+import { Testimonial } from './components/PageSection/Testimonial'
+import { Content } from './types/content'
+
+import { Consultation } from './components/PageSection/Consultation'
+import { Clients } from './components/PageSection/Clients'
 
 function App() {
+  const [content, setContent] = useState<Content | null>(null)
+
+  useEffect(() => {
+    const fetcher = async () => {
+      const response = await fetch('/data/content.json').then((res) =>
+        res.json()
+      )
+      setContent(response.data)
+    }
+
+    fetcher()
+  }, [])
+
   return (
-    <div className="max-w-7xl mx-auto px-4">
+    <div>
       <Navbar />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nemo.
-        Vel perspiciatis id vitae vero aspernatur odit quos, dignissimos cum
-        magni repellat corporis. Autem doloribus possimus esse eum, reiciendis
-        aspernatur. Labore dolore, quae aliquam doloribus laudantium suscipit
-        ullam aliquid amet a repellat excepturi numquam dicta minima iste error
-        tenetur, aspernatur, et cupiditate laboriosam nulla? Delectus, nihil
-        commodi eligendi quidem, quas recusandae cupiditate iusto dolores, rerum
-        laboriosam molestiae! Repellat vitae quod perspiciatis, sapiente nobis
-        sed odit error consequatur exercitationem quis autem.
-      </p>
+      <Header />
+      <Service content={content} />
+      <OurProgress />
+      <Portfolio portfolio={content?.portfolio} />
+      <Testimonial />
+      <Clients />
+      <Consultation />
+      <FloatingButton />
+      <Footer />
     </div>
   )
 }

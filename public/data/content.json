@@ -1,0 +1,114 @@
+{
+  "data": {
+    "portfolio": [
+      {
+        "title": "ILIOS app (B2B E-commerce)",
+        "description": "Has a unique selling point where not all companies offer applications for sales, data collection and management.",
+        "category": "Mobile apps",
+        "thumbnailUrl": "/phone.png"
+      },
+      {
+        "title": "Home and living",
+        "description": "Albatech helps in creating a website catalog to show brand identity and information in accordance with vision and mission in Home and Living.",
+        "category": "Website development",
+        "thumbnailUrl": "/phone.png"
+      },
+      {
+        "title": "HIPPO",
+        "description": "Albatech helps to create e-commerce and company profile for Hippo's Website with realtime transaction and integration with Payment Gateway to accept multipayment.",
+        "category": "Website development",
+        "thumbnailUrl": "/phone.png"
+      }
+    ],
+    "service": [
+      {
+        "iconUrl": "/website-development.svg",
+        "title": "Website Development",
+        "description": "High-performance website to reach out more your potential customers"
+      },
+      {
+        "iconUrl": "/mobile-apps-development.svg",
+        "title": "Mobile apps development",
+        "description": "To accelerate your bussiness process"
+      },
+      {
+        "iconUrl": "/digital-product-design.svg",
+        "title": "Digital product design",
+        "description": "Complete digital product creations from UX prototyping to final UI designs"
+      },
+      {
+        "iconUrl": "/maintenance.svg",
+        "title": "Maintenance",
+        "description": "Make sure your digital environment keep online and updated"
+      },
+      {
+        "iconUrl": "/cms-development.svg",
+        "title": "CMS development",
+        "description": "You can update your website content yourself"
+      },
+      {
+        "iconUrl": "/integrated-payment-gateway.svg",
+        "title": "Integrated payment gateway",
+        "description": "Simplify the payment system with just one step"
+      }
+    ],
+    "techStack": [
+      "/aws.svg",
+      "/gcp.svg",
+      "/angular.svg",
+      "/css.svg",
+      "/html.svg",
+      "/node.svg",
+      "/php.svg",
+      "/python.svg",
+      "/react.svg",
+      "/ruby.svg",
+      "/mongo.svg",
+      "/mysql.svg",
+      "/postgre.svg",
+      "/sql.svg"
+    ],
+    "testimonial": [
+      {
+        "author": "Matthijs Piest",
+        "title": "Amazing people",
+        "description": "They are people who are not only following the tasks, but can work as team. Together.",
+        "position": "COO",
+        "company": "WiebetaaltWat",
+        "isWithImage": true
+      },
+      {
+        "author": "Matthijs Piest",
+        "title": "Partnership approach",
+        "description": "We felt like we had a true partner throughout the process. They were clearly interested on our  long-term success.",
+        "position": "COO",
+        "company": "WiebetaaltWat",
+        "isWithImage": false
+      },
+      {
+        "author": "Matthijs Piest",
+        "title": "Partnership approach",
+        "description": "We felt like we had a true partner throughout the process. They were clearly interested on our  long-term success.",
+        "position": "COO",
+        "company": "WiebetaaltWat",
+        "isWithImage": false
+      },
+      {
+        "author": "Matthijs Piest",
+        "title": "Partnership approach",
+        "description": "We felt like we had a true partner throughout the process. They were clearly interested on our  long-term success.",
+        "position": "COO",
+        "company": "WiebetaaltWat",
+        "isWithImage": false
+      },
+      {
+        "author": "Matthijs Piest",
+        "title": "Partnership approach",
+        "description": "We felt like we had a true partner throughout the process. They were clearly interested on our  long-term success.",
+        "position": "COO",
+        "company": "WiebetaaltWat",
+        "isWithImage": true
+      }
+    ]
+  }
+}
