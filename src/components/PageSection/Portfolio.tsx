@@ -1,5 +1,6 @@
 import { Content } from '../../types/content'
 import { Button } from '../Button'
+import { Container } from '../Container'
 import { TitleSection } from '../TitleSection'
 
 interface PortfolioProps {
@@ -7,7 +8,7 @@ interface PortfolioProps {
 }
 
 export const Portfolio = ({ portfolio }: PortfolioProps) => (
-  <section className="max-w-7xl mx-auto px-4 py-16">
+  <Container>
     <TitleSection
       title={
         <div className="sm:w-1/2 mx-auto">
@@ -34,5 +35,5 @@ export const Portfolio = ({ portfolio }: PortfolioProps) => (
     <div className="flex justify-center">
       <Button text="Learn more" />
     </div>
-  </section>
+  </Container>
 )

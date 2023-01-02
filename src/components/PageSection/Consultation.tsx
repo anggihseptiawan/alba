@@ -1,7 +1,8 @@
 import { Button } from '../Button'
+import { Container } from '../Container'
 
 export const Consultation = () => (
-  <section className="max-w-7xl mx-auto px-4 py-16 bg-yellow-400 rounded-lg">
+  <Container className="bg-yellow-400 rounded-lg">
     <p className="text-center mb-2 text-sm">
       Is software important to your business?
     </p>
@@ -11,5 +12,5 @@ export const Consultation = () => (
     <div className="flex justify-center">
       <Button text="Consultation Now" type="outline" />
     </div>
-  </section>
+  </Container>
 )

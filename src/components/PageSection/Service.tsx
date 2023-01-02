@@ -1,4 +1,5 @@
 import { Content } from '../../types/content'
+import { Container } from '../Container'
 import { TitleSection } from '../TitleSection'
 
 interface ServiceProps {
@@ -6,7 +7,7 @@ interface ServiceProps {
 }
 
 export const Service = ({ content }: ServiceProps) => (
-  <section className="max-w-7xl mx-auto px-4 py-12 md:pt-44">
+  <Container className="md:pt-44">
     <TitleSection
       title="From product design to software continuous delivery"
       subtitle="Complete Package"
@@ -40,5 +41,5 @@ export const Service = ({ content }: ServiceProps) => (
         <img key={idx} src={url} className="w-16 sm:w-24" alt="icon" />
       ))}
     </div>
-  </section>
+  </Container>
 )

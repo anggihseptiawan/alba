@@ -1,7 +1,8 @@
+import { Container } from '../Container'
 import { TitleSection } from '../TitleSection'
 
 export const Testimonial = () => (
-  <section className="max-w-7xl mx-auto px-4 py-16 relative">
+  <Container className="relative">
     <TitleSection
       title={
         <div className="md:w-1/3 sm:w-1/2 mx-auto">
@@ -113,5 +114,5 @@ export const Testimonial = () => (
     <figure className="absolute -left-28 bottom-12">
       <img src="/dots.svg" className="grayscale" alt="dots-image" />
     </figure>
-  </section>
+  </Container>
 )

@@ -1,4 +1,5 @@
 import Slider from 'react-slick'
+import { Container } from '../Container'
 
 export const Clients = () => {
   const settings = {
@@ -10,7 +11,7 @@ export const Clients = () => {
   }
 
   return (
-    <section className="max-w-7xl mx-auto px-4 pt-12 pb-28">
+    <Container className="pt-12 pb-28">
       <Slider {...settings}>
         <figure>
           <img src="/hippo.png" alt="hippo" />
@@ -28,6 +29,6 @@ export const Clients = () => {
           <img src="/melandas.png" alt="melandas" />
         </figure>
       </Slider>
-    </section>
+    </Container>
   )
 }

@@ -43,7 +43,7 @@ export const Navbar = () => {
           </a>
         </li>
         <li>
-          <Button text="Contact Us" />
+          <Button text="Login" href="/login" />
         </li>
       </ul>
 

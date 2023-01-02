@@ -1,7 +1,8 @@
 import { Button } from '../Button'
+import { Container } from '../Container'
 
 export const Header = () => (
-  <section className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row py-12">
+  <Container className="flex flex-col lg:flex-row">
     <div className="flex flex-col justify-center mb-12">
       <h1 className="p-2 bg-white border border-black font-bold text-center text-2xl mb-2 sm:text-4xl lg:text-left lg:mt-36 lg:text-7xl">
         Build or scale up
@@ -24,5 +25,5 @@ export const Header = () => (
         alt="img-header"
       />
     </div>
-  </section>
+  </Container>
 )
