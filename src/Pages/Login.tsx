@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Navigate, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
   const [input, setInput] = useState({
@@ -69,7 +69,7 @@ const Login = () => {
           <label htmlFor="email">Email</label>
           <input
             type="email"
-            className="w-full p-2 rounded-md     mt-2 border border-yellow-400"
+            className="w-full p-2 rounded-md mt-2 border border-yellow-400"
             placeholder="email"
             id="email"
             onChange={(e) => setInput({ ...input, email: e.target.value })}
@@ -82,7 +82,7 @@ const Login = () => {
           <label htmlFor="password">Password</label>
           <input
             type="password"
-            className="w-full p-2 rounded-md     mt-2 border border-yellow-400"
+            className="w-full p-2 rounded-md mt-2 border border-yellow-400"
             placeholder="password"
             id="password"
             onChange={(e) => setInput({ ...input, password: e.target.value })}
